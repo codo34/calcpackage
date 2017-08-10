@@ -1,0 +1,12 @@
+\contentsline {part}{I\hspace {1em}Information}{3}{part.1}
+\contentsline {section}{\numberline {1}\bfseries Functions}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}\slshape Even and Odd Functions}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}\slshape Periodicity}{3}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}\slshape Inverse Functions}{3}{subsection.1.3}
+\contentsline {section}{\numberline {2}\bfseries Limits}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}\slshape Definition of a Limit}{3}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}\rmfamily Symbolic Definitions of Limits}{4}{subsubsection.2.1.1}
+\contentsline {subsection}{\numberline {2.2}\slshape Continuity}{4}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}\slshape Horizontal and Vertical Asymptotes}{4}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}\slshape Evaluating Limits}{4}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}\rmfamily Limits of Rational Functions as $x \to \pm \infty $}{4}{subsubsection.2.4.1}

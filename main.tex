@@ -1,0 +1,108 @@
+\documentclass{artikel3}
+
+\usepackage{hyperref}
+\usepackage{mathtools}
+\usepackage{multicol}
+
+\begin{document}
+
+\title{Calculus BC Important Info Sheet}
+\author{Transcribed to \LaTeX\ by Jack Ellert-Beck\\ 
+Most information compiled by Dr. Olga Voronkova}
+\maketitle
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\part{Information}
+
+\section{Functions}
+
+\subsection{Even and Odd Functions}
+A function $y=f(x)$ is \textbf{even} if $f(-x)=f(x)$ for every $x$ 
+in the function's domain. Every even function is summertric about 
+the $y$-axis. \[\text{Example:}\hspace{6 mm} (-x)^2=x^2 \]
+A function $y=f(x)$ is \textbf{odd} if $f(x)=-f(x)$ for every $x$ 
+in the function's domain. Every odd function is symmertric about 
+the origin. \[\text{Example:}\hspace{6 mm} (-x)^3=-(x)^3 \]
+
+\subsection{Periodicity}
+A function $f(x)$ is \textbf{periodic} with period $p\hspace{2 mm}(p>0)$ if 
+$f(x+p)=f(x)$ for every value of $x$.
+
+Sinusoids are examples of periodic functions. Specifically, the period
+of the function $y=A\sin(Bx+C)$ or $y=A\cos(Bx+C)$ is $\frac{2\pi}{|B|}$.
+The amplitude is $|A|$. The period of $y=\tan(x)$ is $\pi$.
+
+\subsection{Inverse Functions}
+If $f$ and $g$ are two functions such that $f(g(x))=x$ for every $x$ in 
+the domain of $g$, and $g(f(x))=x$ for every $x$ in the domain of $f$, then
+$f$ and $g$ are inverse functions of one another.
+
+A function $f$ has an inverse if and only if no horizontal line intersects its graph more than once.
+
+If $f$ is either increasing or decreasing in an interval, then $f$ has an inverse.
+
+For information on the derivatives of inverse functions, see THE THING THAT SHOULD BE HERE.
+
+\section{Limits}
+
+\subsection{Definition of a Limit}
+Let $f$ be a function defined on an open interval containing $c$ 
+(except possibly at $c$) and let $L$ be a real number.
+Then $\lim_{x \to c} f(x)=L$ means that for each $\varepsilon >0$
+there exists a $\delta >0$ such that $|f(x)-L|<\varepsilon$ whenever
+$0<|x-c|<\delta$.
+
+\subsubsection{Symbolic Definitions of Limits}
+\begin{itemize}
+\item{Definition of a finite limit at a specific point:
+\[ \lim_{x \to c}=L\Leftrightarrow (\forall\varepsilon >0, \exists\delta >0, 
+0<|x-c|<\delta \Rightarrow |f(x)-L|<\varepsilon)\]}
+\item{Definition of an undefined limit at a specific point:
+\[ \lim_{x \to c}=\infty\Leftrightarrow (\forall M>0, \exists\delta >0,
+0<|x-c|<\delta\Rightarrow f(x)>M)\]
+\[ \lim_{x \to c}=-\infty\Leftrightarrow (\forall M<0, \exists\delta >0,
+0<|x-c|<\delta\Rightarrow f(x)<M)\]}
+\item{Definition of a finite limit at infinity:
+\[ \lim_{x \to \infty}=L\Leftrightarrow (\forall\varepsilon>0,\exists M,
+x>M\Rightarrow|f(x)-L|<\varepsilon) \]
+\[ \lim_{x \to -\infty}=L\Leftrightarrow (\forall\varepsilon>0,\exists M,
+x<M\Rightarrow|f(x)-L|<\varepsilon) \]}
+\end{itemize}
+
+\subsection{Continuity}
+A function $y=f(x)$ is \textbf{continuous} at $x=a$ if $f(a)$ exists, 
+$\displaystyle\lim_{x \to a}f(x)$ exists, and $\displaystyle\lim_{x \to a}f(x)=f(a)$.
+$y=f(x)$ is continuous on $(a,b)$ if $f(x)$ is continuous for every
+$x\in(a,b)$.
+
+\subsection{Horizontal and Vertical Asymptotes}
+A line $y=b$ is a \textbf{horizontal asymptote} of the graph of $y=f(x)$ if either\\*
+$\displaystyle\lim_{x \to \infty}f(x)=b \text{ or} \lim_{x \to -\infty}f(x)=b$.
+
+A line $x=a$ is a \textbf{vertical asymptote} of the graph of $y=f(x)$ if either\\*
+$\displaystyle\lim_{x \to a^+}f(x)=\pm\infty \text{ or} \lim_{x \to a^-}f(x)=\pm\infty$.
+
+\subsection{Evaluating Limits}
+
+\subsubsection{Limits of Rational Functions as $x \to \pm\infty$}
+\begin{itemize}
+\item{$\displaystyle\lim_{x \to \pm\infty}\frac{f(x)}{g(x)}=0$ if the degree
+of $f(x)$ is less than the degree of $g(x)$.
+\[ \text{Example:}\hspace{6 mm}\lim_{x \to \infty}\frac{x^2-2x}{x^3+3}=0 \]}
+\item{$\displaystyle\lim_{x \to \pm\infty}\frac{f(x)}{g(x)}$ is infinite if the degree
+of $f(x)$ is greater than the degree of $g(x)$.
+\[ \text{Example:}\hspace{6 mm}\lim_{x \to \infty}\frac{x^3+2x}{x^2-8}=\infty \]}
+\item{$\displaystyle\lim_{x \to \pm\infty}\frac{f(x)}{g(x)}$ is finite if the degree 
+of $f(x)$ is equal to the degree of $g(x)$. The limit will be equal to the ratio of 
+the leading coefficients of $f(x)$ to $g(x)$.
+\[ \text{Example:}\hspace{6 mm}\lim_{x \to \infty}\frac{2x^2-3x+2}{10x-5x^2}=-\frac{2}{5} \]}
+\end{itemize}
+
+Lorem Ipsum
+
+\end{document}
