@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1502339248 "main.tex" "main.pdf" "main" 1502339249
+["pdflatex"] 1502427819 "main.tex" "main.pdf" "main" 1502427990
   "e:/Programs/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1497804375 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "e:/Programs/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1497803369 1004 54797486969f23fa377b128694d548df ""
   "e:/Programs/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1497803369 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -41,6 +41,7 @@
   "e:/Programs/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty" 1497803373 4115 318a66090112f3aa3f415aeb6fe8540f ""
   "e:/Programs/texlive/2017/texmf-dist/tex/latex/amsmath/amstext.sty" 1497803373 2431 fe3078ec12fc30287f568596f8e0b948 ""
   "e:/Programs/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd" 1497804786 2256 80ce1168fb4ce6a85583a9cf8972c013 ""
+  "e:/Programs/texlive/2017/texmf-dist/tex/latex/esdiff/esdiff.sty" 1497804216 6725 81b0356953596a27e8aae3837fdac30d ""
   "e:/Programs/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1497804502 1224 978390e9c2234eab29404bc21b268d1e ""
   "e:/Programs/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def" 1497804503 16012 649669cca7d2e6b429ce549c0a775ff0 ""
   "e:/Programs/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty" 1497804501 15252 cc34a2eaf7d6619154fcdb710437d969 ""
@@ -69,13 +70,13 @@
   "e:/Programs/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1497806526 2373962 ac52483dc904e9618290ac66b60646fe ""
   "e:/Programs/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1497806610 4130079 79b1c1dd887f44b235280d9eb82c4832 ""
   "e:/Programs/texlive/2017/texmf.cnf" 1497806514 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "main.aux" 1502339249 2006 4f514a3e770c53ed1cfd7b187c643a29 ""
-  "main.out" 1502339249 813 98a8e55f287f1b2ba5e1233d030ac3d1 ""
-  "main.tex" 1502339226 4416 e637d43968d9c42d790b1b736259c155 ""
-  "main.toc" 1502339249 1105 378cd4a0de053f879fda66a9171283f2 ""
+  "main.aux" 1502427820 4028 bf66409c481d8e9f3810e57d042b2327 ""
+  "main.out" 1502427820 1938 87ad57e1b8b149cc4ee5c2f0ca6d24dd ""
+  "main.tex" 1502427989 7074 14d4577f088623aeb6efb226e6905ea0 ""
+  "main.toc" 1502427820 2603 0aa2d027928baf87882b16ed55874074 ""
   (generated)
-  "main.pdf"
   "main.aux"
+  "main.pdf"
   "main.out"
   "main.log"
   "main.toc"

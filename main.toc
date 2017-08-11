@@ -10,3 +10,19 @@
 \contentsline {subsection}{\numberline {2.3}\slshape Horizontal and Vertical Asymptotes}{4}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}\slshape Evaluating Limits}{4}{subsection.2.4}
 \contentsline {subsubsection}{\numberline {2.4.1}\rmfamily Limits of Rational Functions as $x \to \pm \infty $}{4}{subsubsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.2}\rmfamily Remarkable Limits}{5}{subsubsection.2.4.2}
+\contentsline {subsection}{\numberline {2.5}\slshape Intermediate Value Theorem}{5}{subsection.2.5}
+\contentsline {section}{\numberline {3}\bfseries Derivatives}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}\slshape Notation of Derivatives}{5}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}\slshape Rate of Change}{5}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}\slshape Definition of a Derivative}{5}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}\slshape Derivatives of Inverse Functions}{6}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}\slshape Finding Maxima and Minima}{6}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}\slshape Monotonicity}{6}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}\slshape Concavity}{6}{subsection.3.7}
+\contentsline {subsection}{\numberline {3.8}\slshape Rolle's Theorem}{6}{subsection.3.8}
+\contentsline {subsection}{\numberline {3.9}\slshape Mean Value Theorem}{6}{subsection.3.9}
+\contentsline {subsection}{\numberline {3.10}\slshape Extreme Value Theorem}{6}{subsection.3.10}
+\contentsline {subsection}{\numberline {3.11}\slshape Linear Approximation}{6}{subsection.3.11}
+\contentsline {subsection}{\numberline {3.12}\slshape Newton's Method}{6}{subsection.3.12}
+\contentsline {subsection}{\numberline {3.13}\slshape L'H\^{o}pital's Rule}{6}{subsection.3.13}

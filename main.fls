@@ -51,6 +51,8 @@ INPUT e:/Programs/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
 INPUT e:/Programs/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
 INPUT e:/Programs/texlive/2017/texmf-dist/tex/latex/tools/multicol.sty
 INPUT e:/Programs/texlive/2017/texmf-dist/tex/latex/tools/multicol.sty
+INPUT e:/Programs/texlive/2017/texmf-dist/tex/latex/esdiff/esdiff.sty
+INPUT e:/Programs/texlive/2017/texmf-dist/tex/latex/esdiff/esdiff.sty
 INPUT main.aux
 INPUT main.aux
 OUTPUT main.aux
