@@ -23,6 +23,6 @@
 \contentsline {subsection}{\numberline {3.8}\slshape Rolle's Theorem}{6}{subsection.3.8}
 \contentsline {subsection}{\numberline {3.9}\slshape Mean Value Theorem}{6}{subsection.3.9}
 \contentsline {subsection}{\numberline {3.10}\slshape Extreme Value Theorem}{6}{subsection.3.10}
-\contentsline {subsection}{\numberline {3.11}\slshape Linear Approximation}{6}{subsection.3.11}
-\contentsline {subsection}{\numberline {3.12}\slshape Newton's Method}{6}{subsection.3.12}
-\contentsline {subsection}{\numberline {3.13}\slshape L'H\^{o}pital's Rule}{6}{subsection.3.13}
+\contentsline {subsection}{\numberline {3.11}\slshape Linear Approximation}{7}{subsection.3.11}
+\contentsline {subsection}{\numberline {3.12}\slshape Newton's Method}{7}{subsection.3.12}
+\contentsline {subsection}{\numberline {3.13}\slshape L'H\^{o}pital's Rule}{7}{subsection.3.13}

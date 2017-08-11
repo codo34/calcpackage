@@ -25,10 +25,12 @@ Most information compiled by Dr.\ Olga Voronkova}
 \subsection{Even and Odd Functions}
 A function $y=f(x)$ is \textbf{even} if $f(-x)=f(x)$ for every $x$ 
 in the function's domain. Every even function is summertric about 
-the $y$-axis. \[\text{Example:}\hspace{6 mm} (-x)^2=x^2 \]
+the $y$-axis. 
+\[\text{Example:}\hspace{6 mm} {(-x)}^2=x^2 \]
 A function $y=f(x)$ is \textbf{odd} if $f(x)=-f(x)$ for every $x$ 
 in the function's domain. Every odd function is symmertric about 
-the origin. \[\text{Example:}\hspace{6 mm} (-x)^3=-(x)^3 \]
+the origin. 
+\[\text{Example:}\hspace{6 mm} {(-x)}^3=-{(x)}^3 \]
 
 \subsection{Periodicity}
 A function $f(x)$ is \textbf{periodic} with period $p\hspace{2 mm}(p>0)$ if 
@@ -154,22 +156,65 @@ on $I$, then $g=f^{-1}(x)$ is differentiable at every point of the interior of
 the interval $f(I)$ and $g'(f(x))=\frac{1}{f'(x)}$.
 
 \subsection{Finding Maxima and Minima}
+To find the maximum and minimum values of a function $y=f(x)$, locate
+\begin{enumerate}
+\item{the points where $f'(x)$ is zero or where $f'(x)$ fails to exist}
+\item{the end points, if any, on the domain of $f(x)$}
+\end{enumerate}
+These are the only candidates for the value of $x$ where where $f(x)$ 
+may have a maximum or a minimum.
 
 \subsection{Monotonicity}
+Let $f$ be differentiable for $a<x<b$ and continuous for $a\leq x\leq b$.
+\begin{enumerate}
+\item{If $f'(x)>0$ for every $x$ in $(a,b)$, then $f$ is increasing on $[a,b]$.}
+\item{If $f'(x)<0$ for every $x$ in $(a,b)$, then $f$ is decreasing on $[a,b]$.}
+\end{enumerate}
 
 \subsection{Concavity}
+Suppose that $f''(x)$ exists on the interval $(a,b)$.
+\begin{enumerate}
+\item{If $f''(x)>0$ in $(a,b)$, then $f$ is concave upward in $(a,b)$.}
+\item{If $f''(x)<0$ in $(a,b)$, then $f$ is concave downward in $(a,b)$.}
+\end{enumerate}
+To locate the points of inflection of $y=f(x)$, find the points where 
+$f''(x)=0$ or where $f''(x)$ fails to exist. These are the only candidates where 
+$f(x)$ may have a point of inflection. Then test these points to make sure that 
+$f''(x)<0$ on one side and $f''(x)>0$ on the other.
 
 \subsection{Rolle's Theorem}
+If $f$ is continuous on $[a,b]$ and differentiable on $(a.b)$ such that 
+$f(a)=f(b)$, then there is at least one number $c$ in the open interval 
+$(a,b)$ such that $f'(c)=0$.
+
+Note that this is a special case of the Mean Value Theorem.
 
 \subsection{Mean Value Theorem}
+If $f$ is continuous on $[a,b]$ and differentiable on $(a,b)$, then there 
+is at least one number $c$ in $(a,b)$ such that 
+\[ \frac{f(b)-f(a)}{b-a}=f'(c)\Rightarrow f(b)-f(a)=f'(c)(b-a) \]
 
 \subsection{Extreme Value Theorem}
+If $f$ is continuous on $[a,b]$, then $f(x)$ has both a maximum and 
+a minimum on $[a,b]$.
 
 \subsection{Linear Approximation}
+The linear approximation to $f(x)$ near $x=x_0$ is given by 
+\[ y=f(x_0)+f'(x_0)(x-x_0) \]
+for $x$ sufficiently close to $x_0$.
 
 \subsection{Newton's Method}
+Let $f$ be a differentiable function and suppose $r$ is a real zero of $f$.
+If $x_n$ is an approximation to $r$, then the next approximation $x_{n+1}$ 
+is given by
+\[ x_{n+1}=x_n-\frac{f(x_n)}{f'(x_n)} \]
+provided $f'(x_n)\neq 0$. Successive approximations can be found using this method.
 
 \subsection{L'H\^{o}pital's Rule}
+If $\displaystyle\lim_{x \to a}\frac{f(x)}{g(x)}$ is of the form $\frac{0}{0}$ 
+or $\frac{\infty}{\infty}$, and if 
+$\displaystyle\lim_{x \to a}\frac{f'(x)}{g'(x)}$ exists, then 
+\[ \lim_{x \to a}\frac{f(x)}{g(x)}=\lim_{x \to a}\frac{f'(x)}{g'(x)} \]
 
 Lorem Ipsum
 
