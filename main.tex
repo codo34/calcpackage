@@ -5,6 +5,15 @@
 \usepackage{multicol}
 \usepackage{esdiff}
 
+\hypersetup{
+  colorlinks   = true, %Colours links instead of ugly boxes
+  urlcolor     = blue, %Colour for external hyperlinks
+  linkcolor    = red, %Colour of internal links
+  citecolor   = red %Colour of citations
+}
+
+\newcommand{\ddx}{\diff{}{x}}
+
 \begin{document}
 
 \title{Calculus BC Important Info Sheet}
@@ -39,6 +48,11 @@ $f(x+p)=f(x)$ for every value of $x$.
 Sinusoids are examples of periodic functions. Specifically, the period
 of the function $y=A\sin(Bx+C)$ or $y=A\cos(Bx+C)$ is $\frac{2\pi}{|B|}$.
 The amplitude is $|A|$. The period of $y=\tan(x)$ is $\pi$.
+
+\subsection{Composition of Functions}
+Given two functions $f$ and $g$, the composite function
+$f(g(x))$ can be written as $(f\circ g)(x)$. Note that 
+$f\circ g$ is not necessarily equal to $g\circ f$.
 
 \subsection{Inverse Functions}
 The inverse of a funtion $f(x)$ is often written as $f^{-1}(x)$, or given 
@@ -110,7 +124,7 @@ the leading coefficients of $f(x)$ to $g(x)$.
 \end{itemize}
 
 \subsubsection{Remarkable Limits}
-See THE THING THAT HAPPENS LATER.
+See The Later Section.
 
 \subsection{Intermediate Value Theorem}
 A function $y=f(x)$ that is continuous on a closed interval $[a,b]$ takes on 
@@ -124,13 +138,13 @@ in the open interval $[a,b]$.
 \subsection{Notation of Derivatives}
 The derivative of the function $y=f(x)$ is commonly written as any of the following:
 \[ f'(x)\hspace{6 mm}[f(x)]'\hspace{6 mm}y'\]
-\[ \diff{y}{x}\hspace{6 mm}\diff{}{x}f(x) \]
+\[ \diff{y}{x}\hspace{6 mm}\ddx f(x) \]
 
 Higher order derivatives can be written in a number of ways. Below are the 
 respective notations for second, fourth, and nth order derivatives in three different styles.
 \[ \diff[2]{y}{x}\hspace{6 mm}\diff[4]{y}{x}\hspace{6 mm}\diff[n]{y}{x} \]
 \[ f''(x)\hspace{6 mm}f^{IV}(x)\hspace{6 mm}f^{N}(x) \]
-\[ f^{(2)}(x)\hspace{6 mm}f^{(4)}(x)\hspace{6 mm}f^{(n)} \]
+\[ f^{(2)}(x)\hspace{6 mm}f^{(4)}(x)\hspace{6 mm}f^{(n)}(x) \]
 
 \subsection{Rate of Change}
 If $(x_0,y_0)$ and $(x_1,y_1)$ are points on the graph of $y=f(x)$, then 
@@ -182,6 +196,48 @@ $f''(x)=0$ or where $f''(x)$ fails to exist. These are the only candidates where
 $f(x)$ may have a point of inflection. Then test these points to make sure that 
 $f''(x)<0$ on one side and $f''(x)>0$ on the other.
 
+\subsection{Evaluating Derivatives}
+For more details on evaluating derivatives of specific functions, see the later section.
+
+The derivative of any constant function is $0$.
+\[ \ddx a=0 \]
+Constant coefficients can be factored out of derivatives.
+\[ \ddx Af(x)=A\ddx f(x) \]
+The derivative of a sum is the sum of the derivatives.
+\[ \ddx [f(x)+g(x)]=\ddx f(x)+\ddx g(x) \]
+
+\subsubsection{Power Rule}
+\[ \ddx x^n=nx^{n-1} \]
+
+\subsubsection{Product Rule}
+\[ \ddx f\cdot g=f\cdot g'+g\cdot f' \]
+
+\subsubsection{Quotient Rule}
+\[ \ddx \frac{f}{g}=\frac{g\cdot f'-f\cdot g'}{g^2} \]
+
+\subsubsection{Chain Rule}
+The derivative of a composite function with respect to $x$ is equal to the derivative 
+of the product of the derivative of the outer function with respect to the inner 
+function and the derivative of the inner function.
+\[ \ddx f(g(x))=f'(g(x))\cdot g'(x) \]
+
+\subsubsection{Implicit Differentiation}
+When an equation in $y$ and $x$ is not written in the form $y=f(x)$, we say the 
+function is defined implicitly. To differentiate an implicit function, 
+\begin{enumerate}
+\item{From the given equation construct a function $F(x,y)=0$}
+\item{Use the formula 
+\[ \diff{y}{x}=-\frac{\diffp{F}{x}}{\diffp{F}{y}}=-\frac{F_x}{F_y} \]
+In the numerator, differentiate $F$ with respect to $x$, treating $y$ as constant, 
+and in the denominator, differentiate $F$ with respect to $y$, treating $x$ as constant.}
+\end{enumerate}
+Example: Find $\diff{y}{x}$ of $y=x^2+3\sin y$. 
+\[ F(x,y)=y-x^2-3\sin y=0 \]
+\begin{align*}
+\diff{y}{x}=-\frac{F_x}{F_y} &= -\frac{-2x}{1-3\cos y}\\
+    &= \frac{2x}{1-3\cos y}
+\end{align*}
+
 \subsection{Rolle's Theorem}
 If $f$ is continuous on $[a,b]$ and differentiable on $(a.b)$ such that 
 $f(a)=f(b)$, then there is at least one number $c$ in the open interval 
@@ -215,6 +271,50 @@ If $\displaystyle\lim_{x \to a}\frac{f(x)}{g(x)}$ is of the form $\frac{0}{0}$
 or $\frac{\infty}{\infty}$, and if 
 $\displaystyle\lim_{x \to a}\frac{f'(x)}{g'(x)}$ exists, then 
 \[ \lim_{x \to a}\frac{f(x)}{g(x)}=\lim_{x \to a}\frac{f'(x)}{g'(x)} \]
+
+\section{Integrals}
+
+\subsection{Area Approximation Methods}
+There are a few similar ways to approximate the area under a curve.
+They all involve dividing the total area into smaller sections which approximate 
+the shape of the enclosed region but which have easily computable areas.
+The interval on the $x$-axis $[a,b]$ is typically divided into $n$ subintervals, 
+each with length $\frac{b-a}{n}=\Delta x$.
+
+\subsubsection{Left Riemann Sum}
+\begin{align*}
+\mathrm{Area} &\approx \Delta xf(a)+\Delta xf(a+\Delta x)+\Delta xf(a+2\Delta x)
++\ldots+\Delta xf(b-\Delta x)\\
+    &\approx \Delta x[f(a)+f(a+\Delta x)+f(a+2\Delta x)+\ldots+f(b-\Delta x)]\\
+    &\approx \Delta x \sum_{k=0}^{n-1} f(a+k\Delta x)
+\end{align*}
+This approximation will be an underestimation if $f$ is strictly increasing 
+on $[a, b]$, and an overestimation if $f$ is strictly decreasing.
+
+\subsubsection{Right Riemann Sum}
+\begin{align*}
+\mathrm{Area} &\approx \Delta xf(a+\Delta x)+\Delta xf(a+2\Delta x)
++\ldots+\Delta xf(b)\\
+    &\approx \Delta x[f(a+\Delta x)+f(a+2\Delta x)+\ldots+f(b)]\\
+    &\approx \Delta x \sum_{k=1}^{n} f(a+k\Delta x)
+\end{align*}
+This approximation will be an overestimation if $f$ is strictly increasing 
+on $[a, b]$, and an underestimation if $f$ is strictly decreasing.
+
+\subsubsection{Midpoint Rule}
+\begin{align*}
+\mathrm{Area} &\approx \Delta xf\left ( a+\frac{\Delta x}{2}\right )
++\Delta xf\left ( a+\frac{3\Delta x}{2}\right ) +\ldots
++\Delta xf\left ( b-\frac{\Delta x}{2}\right )\\
+    &\approx \Delta x\left [ f\left ( a+\frac{\Delta x}{2}\right )
+    +f\left ( a+\frac{3\Delta x}{2}\right )+\ldots
+    +f\left ( b-\frac{\Delta x}{2}\right )\right ]\\
+    &\approx \Delta x \sum_{k=1}^{n} f\left ( a+\frac{(2n-1)\Delta x}{2} \right )
+\end{align*}
+
+\subsubsection{Trapezoidal Rule}
+\[ \mathrm{Area} \approx  \]
+\subsection{Definition of the Definite Integral as the Limit of a Sum}
 
 Lorem Ipsum
 
